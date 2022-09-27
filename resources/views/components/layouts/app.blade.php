@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/f3295059fb.js" crossorigin="anonymous"></script>
+    
     {{-- vite --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
