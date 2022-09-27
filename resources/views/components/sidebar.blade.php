@@ -42,7 +42,7 @@
     </ul>
     <div class="flex gap-3 align-middle">
         <span>Nome do usuario</span>
-        <input type="button" value="Sair"class="text-white rounded-full cursor-pointer w-14 bg-rose-500 hover:bg-rose-700" />
+        <button type="button"
+            class="text-white rounded-full cursor-pointer w-14 bg-rose-500 hover:bg-rose-700">Sair</button>
     </div>
 </div>
-
