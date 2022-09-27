@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <div class="grid w-screen h-screen grid-cols-3 bg-slate-100">
+    <div class="grid w-screen grid-cols-3">
         {{-- sidebar menu --}}
         <div class="grid justify-center">
             <x-sidebar />
@@ -15,6 +15,12 @@
 
                 <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
                 
+                <livewire:tweetes.timeline />
+                <livewire:tweetes.timeline />
+                <livewire:tweetes.timeline />
+                <livewire:tweetes.timeline />
+                <livewire:tweetes.timeline />
+                <livewire:tweetes.timeline />
                 <livewire:tweetes.timeline />
             </div>
         </div>

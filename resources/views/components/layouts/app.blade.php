@@ -16,9 +16,9 @@
     @livewireScripts
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <div class="container">
+    <div class="container ">
 
         {{ $slot }}
         

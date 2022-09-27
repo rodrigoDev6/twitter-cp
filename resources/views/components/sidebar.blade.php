@@ -41,7 +41,7 @@
         </li>
     </ul>
     <div class="flex gap-3 align-middle">
-        <span>Nome do usuario</span>
+        <span>Jon doe</span>
         <button type="button"
             class="text-white rounded-full cursor-pointer w-14 bg-rose-500 hover:bg-rose-700">Sair</button>
     </div>
