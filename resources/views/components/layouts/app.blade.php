@@ -25,6 +25,7 @@
     </div>
 
     @livewireStyles
+
 </body>
 
 </html>

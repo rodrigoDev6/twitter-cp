@@ -14,10 +14,11 @@ return new class () extends Migration {
     {
         Schema::create('tweets', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->nullable()->cascadeOnDelete();
             $table->string('description', 250);
             $table->boolean('privacy');
-            $table->bigInteger('likes');
-            $table->bigInteger('retweets');
+            $table->bigInteger('likes')->default(0);
+            $table->bigInteger('retweets')->default(0);
             $table->timestamps();
         });
     }

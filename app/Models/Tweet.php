@@ -11,6 +11,7 @@ class Tweet extends Model
     use HasFactory;
 
     public $fillable = [
+        'user_id',
         'description',
         'privacy',
         'likes',
@@ -18,8 +19,8 @@ class Tweet extends Model
     ];
 
 
-    // public function user()
-    // {
-    //     return $this->belongsTo(User::class);
-    // }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
