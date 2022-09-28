@@ -5,8 +5,8 @@
             <x-sidebar />
         </div>
         {{-- tweets --}}
-        <div class="grid">
-            <div class="container">
+        <div class="grid h-screen overflow-y-auto" style="overflow:">
+            <div class="container ">
                 <div class="flex py-2 max-w-max">
                     <span class="text-xl font-bold">Página Inicial</span>
                 </div>
@@ -15,8 +15,6 @@
 
                 <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
-                <livewire:tweetes.timeline />
-                <livewire:tweetes.timeline />
                 <livewire:tweetes.timeline />
             </div>
         </div>
