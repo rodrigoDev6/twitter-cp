@@ -17,9 +17,13 @@ class Timeline extends Component
     {
     }
 
+    public function retweet()
+    {
+    }
+
     public function render()
     {
-        $tweets = Tweet::get();
+        $tweets = Tweet::orderBy('created_at', 'DESC')->get();
         return view('livewire.tweetes.timeline', ['tweets' => $tweets]);
     }
 }

@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class SendTweet extends Component
 {
+    public $user = 1;
     public $tweet = [
         'user_id'       => 1,
         'description'   => '',
@@ -15,20 +16,26 @@ class SendTweet extends Component
         'retweets'      => 0
     ];
 
+
     public $rules = [
         'tweet.description' => 'required'
     ];
-    
+
     public function create()
     {
+        // dd($this->tweet);
         $this->validate();
-        $tweet = Tweet::create($this->tweet);
-        
-        // dd($tweet);
-        $this->dispatchBrowserEvent('create');
+        Tweet::create($this->tweet);
+        $this->reset('tweet');     
         $this->emit('create');
+
     }
-    
+
+    public function clear()
+    {
+        unset($this->tweet[1]);
+    }
+
 
     public function render()
     {

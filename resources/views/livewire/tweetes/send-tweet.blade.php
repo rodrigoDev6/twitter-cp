@@ -4,6 +4,7 @@
         <div class="flex">
             <span class="text-2xl">
                 <i class="fa-regular fa-circle-user"></i>
+
             </span>
         </div>
         <form>
@@ -15,7 +16,7 @@
                         <option value="2">Somente eu</option>
                     </select>
 
-                    <textarea name="text" rows="7" class="pt-3 text-xl bg-transparent outline-none" cols="50" wrap="soft"
+                    <textarea required name="text" rows="7" class="pt-3 text-xl bg-transparent outline-none" cols="50" wrap="soft"
                         maxlength="300" placeholder="O que está acontencendo ? " style="resize: none" wire:model='tweet.description'></textarea>
 
                     <div class="flex justify-between gap-3 py-3">
