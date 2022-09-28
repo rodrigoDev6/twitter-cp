@@ -12,6 +12,7 @@ class Tweet extends Model
 
     public $fillable = [
         'description',
+        'privacy',
         'likes',
         'retweets'
     ];

@@ -21,7 +21,6 @@
         {{-- endTweets --}}
 
         <div class="grid">
-            Pesquisa de tweets
         </div>
     </div>
 </x-layouts.app>
