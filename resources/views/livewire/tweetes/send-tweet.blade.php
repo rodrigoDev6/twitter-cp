@@ -13,8 +13,8 @@
                     <option value="2">Somente eu</option>
                 </select>
 
-                <textarea name="text" rows="5" class="pt-3 text-xl bg-transparent outline-none" cols="45" wrap="soft"
-                    maxlength="300" placeholder="O que está acontencendo ? "></textarea>
+                <textarea name="text" rows="7" class="pt-3 text-xl bg-transparent outline-none" cols="50" wrap="soft"
+                    maxlength="300" placeholder="O que está acontencendo ? " style="resize: none"></textarea>
                 <div class="flex justify-between gap-3 py-3">
                     <div class="flex gap-3">
                         <span class="text-2xl cursor-pointer">

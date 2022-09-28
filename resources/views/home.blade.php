@@ -14,11 +14,7 @@
                 <livewire:tweetes.send-tweet />
 
                 <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-                
-                <livewire:tweetes.timeline />
-                <livewire:tweetes.timeline />
-                <livewire:tweetes.timeline />
-                <livewire:tweetes.timeline />
+
                 <livewire:tweetes.timeline />
                 <livewire:tweetes.timeline />
                 <livewire:tweetes.timeline />
@@ -26,12 +22,8 @@
         </div>
         {{-- endTweets --}}
 
-        <div>03</div>
-
-
-    </div>
-    <div>
-
-    </div>
+        <div class="grid">
+            Pesquisa de tweets
+        </div>
     </div>
 </x-layouts.app>
