@@ -6,7 +6,7 @@
         </div>
         {{-- tweets --}}
         <div class="grid h-screen overflow-y-auto" style="overflow:">
-            <div class="container ">
+            <div class="container">
                 <div class="flex py-2 max-w-max">
                     <span class="text-xl font-bold">Página Inicial</span>
                 </div>

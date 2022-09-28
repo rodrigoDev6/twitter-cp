@@ -41,8 +41,8 @@
         </li>
     </ul>
     <div class="flex gap-3 align-middle">
-        <span>Jon doe</span>
-        <button type="button"
-            class="text-white rounded-full cursor-pointer w-14 bg-rose-500 hover:bg-rose-700">Sair</button>
+        <span>{{ Auth::user()->name}}</span>
+        <a href="{{ route('logout') }}" 
+            class="text-center text-white rounded-full cursor-pointer w-14 bg-rose-500 hover:bg-rose-700">Sair</a>
     </div>
 </div>

@@ -4,12 +4,13 @@ namespace App\Http\Livewire\Tweetes;
 
 use App\Models\Tweet;
 use Livewire\Component;
+use Illuminate\Support\Facades\Auth;
 
 class SendTweet extends Component
 {
-    public $user = 1;
+
     public $tweet = [
-        'user_id'       => 1,
+        'user_id' => null,
         'description'   => '',
         'privacy'       => 0,
         'likes'         => 0,
@@ -23,9 +24,13 @@ class SendTweet extends Component
 
     public function create()
     {
-        // dd($this->tweet);
         $this->validate();
-        Tweet::create($this->tweet);
+
+        $tweet = Tweet::create($this->tweet);
+        $tweet->update(['user_id' => Auth::user()->id]);
+        // dd($tweet);
+
+
         $this->reset('tweet');     
         $this->emit('create');
 

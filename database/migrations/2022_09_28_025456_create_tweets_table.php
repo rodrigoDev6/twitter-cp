@@ -14,7 +14,7 @@ return new class () extends Migration {
     {
         Schema::create('tweets', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->nullable()->cascadeOnDelete();
+            $table->foreignId('user_id')->nullable()->constrained()->cascadeOnDelete();
             $table->string('description', 250);
             $table->boolean('privacy');
             $table->bigInteger('likes')->default(0);

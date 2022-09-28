@@ -2,15 +2,14 @@
     {{-- componentForSendTweet --}}
     <div class="flex gap-2">
         <div class="flex">
-            <span class="text-2xl">
+            <span class="text-2xl ">
                 <i class="fa-regular fa-circle-user"></i>
-
             </span>
         </div>
         <form>
             <div class="flex justify-start">
                 <div class="flex flex-col">
-                    <select name="" class="px-3 py-1 bg-white border-solid rounded-lg w-max text-sky-400"
+                    <select name="" class="px-3 py-1 bg-white border-solid rounded-lg outline-none w-max text-sky-400"
                         wire:model='tweet.privacy'>
                         <option value="1">Qualquer pessoa</option>
                         <option value="2">Somente eu</option>
