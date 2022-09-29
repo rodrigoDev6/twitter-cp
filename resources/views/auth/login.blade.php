@@ -8,7 +8,7 @@
                         class="w-full" alt="Phone image" />
                 </div>
                 <div class="md:w-8/12 lg:ml-20 lg:w-5/12">
-                    <form method="POST" action="{{ route('login')}}">
+                    <form method="POST" action="{{ route('home')}}">
                         @csrf
                         <!-- Email input -->
                         <div class="mb-6">

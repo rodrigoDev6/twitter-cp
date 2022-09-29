@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,11 +16,9 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [UserController::class, 'login'])->name('auth.login');
 //rota para realizar o login na aplicação
-Route::post('/login', [UserController::class, 'auth'])->name('login');
-
-Route::post('/', [UserController::class, 'logout'])->name('logout');
-
+Route::get('/', [UserController::class, 'login'])->name('auth.login');
 //rota da home com os tweets
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/home', [UserController::class, 'auth'])->name('home');
+//logout da aplicação
+Route::post('/login', [UserController::class, 'logout'])->name('logout');
